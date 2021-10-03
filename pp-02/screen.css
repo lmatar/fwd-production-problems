@@ -5,3 +5,32 @@ video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,a
 /* stylelint-enable */
 
 /* Begin site styles below */
+html {
+    margin: 0 auto;
+    width: 93.75%; /* 900 ÷ 960 */
+    color: #EEE;
+    background: #111;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.125em; /* 18 / 16 */
+    line-height: 1.3333333333em; /* 24 / 18 */
+}
+
+ul,li {
+    padding-bottom: 0.3333333333em; /* 6 / 18 */
+}
+
+a {
+    color: #0099e5;
+}
+
+h1 {
+	font-size:1.5em;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+h2 {
+	font-size:1.25em;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
