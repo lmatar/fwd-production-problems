@@ -7,41 +7,43 @@ video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,a
 /* Begin site styles below */
 html {
     margin: 0 auto;
-    width: 93.75%; /* 900 ÷ 960 */
+    padding: 1.5em;
     color: #EEE;
     background: #111;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 1.125em; /* 18 / 16 */
-    line-height: 1.3333333333em; /* 24 / 18 */
+    font-size: 1em; /* 16 / 16 */
+    line-height: 1.5em; /* 24 / 16 */
 }
-
-ul,li {
-    padding-bottom: 0.3333333333em; /* 6 / 18 */
-}
-
-a {
-    color: #0099e5;
-}
-
 h1 {
-	font-size:1.5em;
-	margin-top: 1em;
-	margin-bottom: 1em;
+    font-size: 1.728em; /*41.472px*/
+    padding-bottom: 1.25em;
+}
+h2 {
+   font-size: 1.44em; /*34.56px*/
+   font-weight: bold;
+   padding-bottom: 1.125em;
+}
+h3 {
+    font-size: 1.2em; /*28.8px*/
+    padding-bottom: 1.125em;
+}
+p,ul,figcaption{
+    padding-bottom: 1em;
+}
+a {
+    text-decoration: none;
+    padding-bottom: 1em;
 }
 
-h2 {
-	font-size:1.25em;
-	margin-top: 1em;
-	margin-bottom: 1em;
-}
+
 
 /** A quick baseline grid overlay using css+svg. Inspired by [Basehold.it](https://basehold.it/). @author leshido */
 .g body {
     position: relative;
-  }
+}
   
-  .g body::after {
-    background: url('data:image/svg+xml;utf8,<svg height="24" width="1" xmlns="http://www.w3.org/2000/svg"><rect width="1" height="0.5" style="fill:rgba(255, 0, 0, 0.3)" /></svg>') repeat top left;
+.g body::after {
+    background: url('data:image/svg+xml;utf8,<svg height="12" width="1" xmlns="http://www.w3.org/2000/svg"><rect width="1" height="0.5" style="fill:rgba(255, 0, 0, 0.3)" /></svg>') repeat top left;
     content: "";
     display: block;
     pointer-events:
@@ -52,8 +54,8 @@ h2 {
     z-index: 9999;
     position:
     absolute;
-  }
+}
   
-  .g body:active::after {
+.g body:active::after {
     display: none;
-  }
+}
