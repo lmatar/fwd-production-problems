@@ -17,30 +17,42 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 }
 #three {
   background-color: purple;
+  order: 3;
 }
 #two {
   background-color: green;
+  order: 2;
 }
 #one {
   background-color: red;
+  order: 1;
 }
 
 
 /* ==== LAYOUT STYLES ==== */
 #content {
   display: flex;
-  flex-flow: column-reverse nowrap;
+  flex-flow: column nowrap;
 }
 
 #three,
 #two,
 #one {
-  height: 50vw;
-
+  height: 100vw;
 }
 
 @media screen and (min-width: 600px) {
-
+  #content {
+    flex-flow: row wrap;
+  }
+  #one,
+  #two {
+    flex: 1 0 50%; /* split the two boxes on the screen */
+    height: 50vw;
+  }
+  #three {
+    flex: 1 0 100% /* full viewport for third box */
+  }
 }
 
 @media screen and (min-width: 800px) {
