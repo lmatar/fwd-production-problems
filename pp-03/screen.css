@@ -56,5 +56,10 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 }
 
 @media screen and (min-width: 800px) {
-
+  #one,
+  #two,
+  #three {
+    flex: 1 0 33%; /* 1/3 because we want 3 boxes */
+    height: 33vw;
+  }
 }
