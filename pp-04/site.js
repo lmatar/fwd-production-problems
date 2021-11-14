@@ -4,7 +4,7 @@
   `x` as the variable inside the function, however.
 */
 
-x = 5;
+var x = 5;
 
 function double(num) {
   x = num * 2;
@@ -25,8 +25,15 @@ console.log('The value of x is', x, '-- it should be 5.');
 */
 
 
+
+
 /*
   Step 3. Rewrite your corrected `double()` function from Step 2.
   so that non-number values passed into the function are handled
   in some reasonable way.
 */
+
+/*if (typeof(forcedNumber) !== 'number' || isNaN(forcedNumber)) {
+    console.log('num must be a number; you wrote "' + num + '"');
+    return;
+  }*/
