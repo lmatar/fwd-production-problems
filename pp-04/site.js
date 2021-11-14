@@ -24,10 +24,7 @@ var x = 5;
 var double = function(num) {
   var x = num * 2;
   return x;
-};
-
-double(6);
-console.log('The value of x is', x, '-- it should be 5.');
+}; 
 
 /*
   Step 3. Rewrite your corrected `double()` function from Step 2.
@@ -35,7 +32,18 @@ console.log('The value of x is', x, '-- it should be 5.');
   in some reasonable way.
 */
 
-/*if (typeof(forcedNumber) !== 'number' || isNaN(forcedNumber)) {
-    console.log('num must be a number; you wrote "' + num + '"');
-    return;
-  }*/
+//If not number, just adds two of what the input was (ex. "hello world" -> "hello world hello world")
+var double = function(val) {
+  if (typeof(val) == 'number') {
+    var x = val * 2;
+    return x;
+  } else {
+    return val+ ' ' + val;
+  }
+};
+
+var test1 = double(6);
+console.log('double returns:', test1);
+var test2 = double("hello world");
+console.log('double returns:', test2);
+console.log('The value of x is', x, '-- it should be 5.');
